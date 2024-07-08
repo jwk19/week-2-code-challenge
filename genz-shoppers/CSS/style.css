@@ -1,0 +1,88 @@
+/*set background of the page*/
+
+.body {
+    background-color: rgb(8, 165, 165);
+}
+/*set background of heading and text color*/
+.body h1 {
+    
+    color: red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#shoppingli-container {
+   
+}
+
+#genzbody {
+    border: 0.2rem solid red;
+    border-radius: 20px;
+    height: 30rem;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#addItem-btn {
+    background: blue;
+    color: azure;
+    border-color: azure;
+    border-radius: 1rem;
+}
+
+#markPurchased-btn {
+    background: greenyellow;
+    color: darkred;
+    border-color: azure;
+    border-radius: 1rem;
+}
+
+#addItem-btn {
+    margin-top: 10px;
+}
+
+#clearList-btn {
+    background: red;
+    color: azure;
+    border-color: azure;
+    border-radius: 1rem;
+    margin-top: 10px;
+}
+
+#btn-container1 {
+    margin: 10px;
+    padding-top: 20px;
+}
+
+#btn-container2 {
+    margin: 10px;
+    padding-top: 10px;
+    align-items: center;
+    
+}
+
+#button-container {
+    
+}
+
+#genzItems-ul {
+   color: black;
+}
+
+#genzShopItems {
+    border: 4px dotted rgb(224, 240, 3);
+    height: 10rem;
+    width: 20rem;
+    border-radius: 20px;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    margin: auto;
+    background: whitesmoke;
+   
+
+}

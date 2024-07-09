@@ -1,88 +1,98 @@
-/*set background of the page*/
-
-.body {
-    background-color: rgb(8, 165, 165);
-}
-/*set background of heading and text color*/
-.body h1 {
-    
-    color: red;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2A9D8F;
+    color: #000;
 }
 
-#shoppingli-container {
-   
+h1 {
+    text-align: center;
+    color: #E76F51;
 }
 
 #genzbody {
-    border: 0.2rem solid red;
-    border-radius: 20px;
-    height: 30rem;
-    width: 50%;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #264653;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#shoppingli-container {
     text-align: center;
 }
 
+#genzShopItems {
+    display: inline-block;
+    text-align: left;
+    border: 2px solid #E9C46A;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F4A261;
+}
+
+#genzItemsUl {
+    padding-left: 0;
+}
+
+#genzItemsUl li {
+    position: relative;
+    margin: 10px 0;
+    padding-left: 20px; /* Adjust based on bullet size */
+    list-style-type: none;
+    cursor: pointer; /* Add cursor to indicate clickable items */
+}
+
+#genzItemsUl li::before {
+    content: '•'; /* Custom bullet */
+    position: absolute;
+    left: 0;
+    color: #E76F51; /* Bullet color */
+    font-size: 1.5em; /* Bullet size */
+    line-height: 1em; /* Align bullets vertically */
+}
+
+#genzItemsUl li.selected {
+    background-color: #D3D3D3; /* Light gray background for selected items */
+}
+
+#genzItemsUl li.purchased {
+    background-color: #90EE90; /* Light green background for purchased items */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#btncontainer1, #btn-container2 {
+    margin: 10px 0;
+}
+
+#newItem {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 #addItem-btn {
-    background: blue;
-    color: azure;
-    border-color: azure;
-    border-radius: 1rem;
+    background-color: #007BFF;
+    color: #fff;
 }
 
 #markPurchased-btn {
-    background: greenyellow;
-    color: darkred;
-    border-color: azure;
-    border-radius: 1rem;
-}
-
-#addItem-btn {
-    margin-top: 10px;
+    background-color: #2A9D8F;
+    color: #fff;
 }
 
 #clearList-btn {
-    background: red;
-    color: azure;
-    border-color: azure;
-    border-radius: 1rem;
-    margin-top: 10px;
-}
-
-#btn-container1 {
-    margin: 10px;
-    padding-top: 20px;
-}
-
-#btn-container2 {
-    margin: 10px;
-    padding-top: 10px;
-    align-items: center;
-    
-}
-
-#button-container {
-    
-}
-
-#genzItems-ul {
-   color: black;
-}
-
-#genzShopItems {
-    border: 4px dotted rgb(224, 240, 3);
-    height: 10rem;
-    width: 20rem;
-    border-radius: 20px;
-    border-bottom-style: groove;
-    border-top-style: groove;
-    margin: auto;
-    background: whitesmoke;
-   
-
+    background-color: #E63946;
+    color: #fff;
 }
